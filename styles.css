@@ -1,3 +1,6 @@
 .w-100{
     align-self: center !important; height: 100vh !important; object-fit: cover !important;
 }
+.card2:hover {
+background-color: #e7e8e9;
+}

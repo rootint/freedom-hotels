@@ -7,20 +7,20 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-light bg-light bg-transparent">
+<nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-light bg-light" style="background-color: rgba(255,255,0,0.2) !important;">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html"><img src="img/icon.jpg" width="50px"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!--     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown">
          <a class="nav-link dropdown-toggle active" href="room_list.html" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">Наши комнаты</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="Forest.html"><i class="fa fa-tree" aria-hidden="true"></i> Forest</a></li>
-            <li><a class="dropdown-item" href="Mountains.html"><i aria-hidden="true" class="fas fa-mountain"></i> Mountains</a></li>
-            <li><a class="dropdown-item" href="Ocean.html"><i aria-hidden="true" class="fas fa-water"></i> Ocean</a></li>
+            <li><a class="dropdown-item" href="Mountains.html"><i aria-hidden="true" class="fa fa-mountain"></i> Mountains</a></li>
+            <li><a class="dropdown-item" href="Ocean.html"><i aria-hidden="true" class="fa fa-water"></i> Ocean</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -35,8 +35,8 @@
     </div>
   </div>
 </nav>
-<div id="slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-  <ol class="carousel-indicators">
+<div id="slider" class="carousel slide" data-bs-ride="carousel">
+  <!-- <ol class="carousel-indicators">
     <li data-bs-target="#slider" data-bs-slide-to="0" class="active"></li>
     <li data-bs-target="#slider" data-bs-slide-to="1"></li>
     <li data-bs-target="#slider" data-bs-slide-to="2"></li>
@@ -44,36 +44,36 @@
     <li data-bs-target="#slider" data-bs-slide-to="4"></li>
     <li data-bs-target="#slider" data-bs-slide-to="5"></li>
     <li data-bs-target="#slider" data-bs-slide-to="6"></li>
-  </ol>
+  </ol> -->
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active" data-bs-interval="4000">
       <img src="img/ocean_1.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-bs-interval="4000">
       <img src="img/ocean_2.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-bs-interval="4000">
       <img src="img/ocean_3.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-bs-interval="4000">
       <img src="img/ocean_4.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-bs-interval="4000">
       <img src="img/ocean_5.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-bs-interval="4000">
       <img src="img/ocean_6.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-bs-interval="4000">
       <img src="img/ocean_7.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#slider" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
     <span class="sr-only"></span>
   </a>
   <a class="carousel-control-next" href="#slider" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <!--     <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
     <span class="sr_only"></span>
   </a>
 </div>
@@ -146,7 +146,12 @@
   </table>
 </div>
 <div>
-  <h2 style="position: absolute; top: 45vh ; left: calc(50vw - 90.69px); width: 100px;"><strong>Ocean</strong></h2>
+  <h1 class="text-light fw-light" style="position: absolute; top: 40vh ; left: calc(50vw - 130.453px); font-size: 100px; font-family: Super_puper_light;">
+      Ocean
+  </h1>
+</div>
+<div class="d-grid col-2 mx-auto py-1 my-2">
+    <a href="https://wapp.click/789779691434" class="btn btn-outline-primary" role="button">Забронировать</a>
 </div>
 <footer class="text-center text-white" style="background-color: #f8f9fa;">
   <div class="container pt-2">

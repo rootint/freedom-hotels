@@ -1,6 +1,21 @@
 .w-100{
-    align-self: center !important; height: 100vh !important; object-fit: cover !important;
+    align-self: center !important; 
+    height: 100vh !important; 
+    object-fit: cover !important;
+    filter: brightness(83%);
 }
 .card2:hover {
 background-color: #e7e8e9;
+}
+
+@font-face{
+    font-family: 'Super_puper_light';
+    src: url(fonts/Helvetica_light.ttf);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
 }

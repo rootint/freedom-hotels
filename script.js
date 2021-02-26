@@ -1,10 +1,9 @@
-$(window).scroll(function() {
-  if ($(document).scrollTop() < 75) {
-    $('nav').addClass('bg-transparent');
-  } else {
-    $('nav').removeClass('bg-transparent');
-  }
-});
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 100);
+$(window).scroll(function(){
+   $('#nav').attr('style', 'background-color: rgba(248,249,250,' + 1 / (1 / ($(this).scrollTop() / 50)) + ') !important');
+})
 $(document).ready(function () {
     $('.dropdown-toggle').mouseover(function() {
         $('.dropdown-menu').fadeIn();
@@ -29,7 +28,6 @@ $(document).ready(function(){
 				$('#back-to-top').fadeOut();
 			}
 		});
-		// scroll body to 0px on click
 		$('#back-to-top').click(function () {
 			$('body,html').animate({
 				scrollTop: 0

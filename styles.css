@@ -2,7 +2,7 @@
     align-self: center !important; 
     height: 100vh !important; 
     object-fit: cover !important;
-    filter: brightness(83%);
+    filter: brightness(75%);
 }
 .card2:hover {
 background-color: #e7e8e9;
@@ -18,4 +18,15 @@ background-color: #e7e8e9;
     bottom: 25px;
     right: 25px;
     display: none;
+}
+#nav{
+    background-color: rgba(248,249,250,0) !important;
+    z-index: 9 !important;}
+
+.body_hide {
+    opacity: 0;
+    transition: 0.9s opacity ease-in-out;
+}
+.body_visible {
+    opacity: 1;
 }

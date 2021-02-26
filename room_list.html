@@ -8,7 +8,12 @@
     integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+<body class="body_hide">
+  <div style="position: absolute; text-align: center; left: calc(50vw - 61.79px); z-index: 10; top: 15px;">
+  <button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <i class="fa fa-info-circle" aria-hidden="true"></i> covid-19 
+  </button>
+</div>
 <div class="container-fluid" style="min-height: 100vh; position: relative; padding: 0 0 200px 0;">  
 <nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-light bg-light bg-transparent">
   <div class="container-fluid">
@@ -102,6 +107,24 @@
     </div>
   </div>
 </a>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">COVID - 19</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Мы заботимся о вас, носите маску в общественных местах. <br>
+        Мы дезинфицируем наши комнаты между клиентами. <br>
+        Больше информации на ВОЗ <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"> who.int </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 <footer class="text-center text-white mt-auto" style="background-color: #f8f9fa;position: absolute; bottom: 0; width: 100%;">
   <div class="container pt-2">

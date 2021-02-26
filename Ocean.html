@@ -6,13 +6,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
-<nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-light bg-light" style="background-color: rgba(255,255,0,0.2) !important;">
+<body class="body_hide">
+<div style="position: absolute; text-align: center; left: calc(50vw - 61.79px); z-index: 10; top: 15px;">
+  <button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <i class="fa fa-info-circle" aria-hidden="true"></i> covid-19 
+  </button>
+</div>
+<nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html"><img src="img/icon.jpg" width="50px"></a>
-  <!--     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown">
@@ -30,7 +32,7 @@
       <form class="d-flex">
         <a class="navbar-brand" href="index.html"><img src="img/russia.png" width="20px"></a>
         <a class="navbar-brand" href="index.html"><img src="img/united-kingdom.png" width="20px"></a>
-        <a class="btn btn-outline-primary" href="room_list.html" role="button">Забронировать</a>
+        <a class="btn btn-primary" href="room_list.html" role="button">Забронировать</a>
       </form>
     </div>
   </div>
@@ -46,25 +48,25 @@
     <li data-bs-target="#slider" data-bs-slide-to="6"></li>
   </ol> -->
   <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="4000">
+    <div class="carousel-item active" data-bs-interval="5000">
       <img src="img/ocean_1.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item" data-bs-interval="4000">
+    <div class="carousel-item" data-bs-interval="5000">
       <img src="img/ocean_2.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item" data-bs-interval="4000">
+    <div class="carousel-item" data-bs-interval="5000">
       <img src="img/ocean_3.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item" data-bs-interval="4000">
+    <div class="carousel-item" data-bs-interval="5000">
       <img src="img/ocean_4.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item" data-bs-interval="4000">
+    <div class="carousel-item" data-bs-interval="5000">
       <img src="img/ocean_5.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item" data-bs-interval="4000">
+    <div class="carousel-item" data-bs-interval="5000">
       <img src="img/ocean_6.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item" data-bs-interval="4000">
+    <div class="carousel-item" data-bs-interval="5000">
       <img src="img/ocean_7.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
@@ -152,6 +154,29 @@
 </div>
 <div class="d-grid col-2 mx-auto py-1 my-2">
     <a href="https://wapp.click/789779691434" class="btn btn-outline-primary" role="button">Забронировать</a>
+</div>
+<div>
+  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </a>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">COVID - 19</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Мы заботимся о вас, носите маску в общественных местах. <br>
+        Мы дезинфицируем наши комнаты между клиентами. <br>
+        Больше информации на ВОЗ <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"> who.int </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 <footer class="text-center text-white" style="background-color: #f8f9fa;">
   <div class="container pt-2">

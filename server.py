@@ -6,7 +6,14 @@ from flask.wrappers import Request
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '#super_maks_johnson'
 
-DEFAULT_LANG = 'ru'
+CLIENT_LANG = 'ru'
+
+@app.route('/change_language', methods=['POST'])
+def change_language():
+    global CLIENT_LANG
+    data = json.loads(request.form['data'])
+    CLIENT_LANG = data
+    return 'Data received', 200
 
 
 @app.route('/forest')
@@ -18,8 +25,10 @@ def forest():
 @app.route('/')
 def index():
     params = {}
-    return render_template('index.html', **params)
-
+    if CLIENT_LANG == 'ru':
+        return render_template('ru/index.html', **params)
+    else:
+        return render_template('en/index.html', **params)
 
 @app.route('/ocean')
 def ocean():
@@ -36,7 +45,10 @@ def mountains():
 @app.route('/map')
 def map():
     params = {}
-    return render_template('map.html', **params)
+    if CLIENT_LANG == 'ru':
+        return render_template('ru/map.html', **params)
+    else:
+        return render_template('en/map.html', **params)
 
 
 def main():

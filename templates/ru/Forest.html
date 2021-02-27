@@ -4,35 +4,38 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
 </head>
 <body class="body_hide">
-<div style="position: absolute; text-align: center; left: calc(50vw - 52.74px); z-index: 10; top: 15px;">
+<div style="position: absolute; text-align: center; left: calc(50vw - 61.79px); z-index: 10; top: 15px;">
   <button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-    <i class="fa fa-info-circle" aria-hidden="true"></i> covid-19 
+  	<i class="fa fa-info-circle" aria-hidden="true"></i> covid-19 
   </button>
 </div>
 <nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="img/icon.jpg" width="50px"></a>
+    <a class="navbar-brand" href="/index"><img src="./static/img/icon.jpg" width="50px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle active" href="room_list.html" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">Наши комнаты</a>
+         <a class="nav-link dropdown-toggle active" href="/room_list" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">Наши комнаты</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="Forest.html"><i class="fa fa-tree" aria-hidden="true"></i> Forest</a></li>
-            <li><a class="dropdown-item" href="Mountains.html"><i aria-hidden="true" class="fa fa-mountain"></i> Mountains</a></li>
-            <li><a class="dropdown-item" href="Ocean.html"><i aria-hidden="true" class="fa fa-water"></i> Ocean</a></li>
+            <li><a class="dropdown-item" href="/forest"><i class="fa fa-tree" aria-hidden="true"></i> Forest</a></li>
+            <li><a class="dropdown-item" href="/mountains"><i aria-hidden="true" class="fas fa-mountain"></i> Mountains</a></li>
+            <li><a class="dropdown-item" href="/ocean"><i aria-hidden="true" class="fas fa-water"></i> Ocean</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="map.html">Карта</a>
+          <a class="nav-link active" href="/map">Карта</a>
         </li>
       </ul>
       <form class="d-flex">
-        <a class="navbar-brand" href="index.html"><img src="img/russia.png" width="20px"></a>
-        <a class="navbar-brand" href="index.html"><img src="img/united-kingdom.png" width="20px"></a>
-        <a class="btn btn-primary" href="room_list.html" role="button">Забронировать</a>
+        <a class="navbar-brand" href="/index"><img src="./static/img/russia.png" width="20px"></a>
+        <a class="navbar-brand" href="/index"><img src="./static/img/united-kingdom.png" width="20px"></a>
+        <a class="btn btn-outline-primary" href="/room_list" role="button">Забронировать</a>
       </form>
     </div>
   </div>
@@ -46,125 +49,128 @@
     <li data-bs-target="#slider" data-bs-slide-to="4"></li>
     <li data-bs-target="#slider" data-bs-slide-to="5"></li>
     <li data-bs-target="#slider" data-bs-slide-to="6"></li>
+    <li data-bs-target="#slider" data-bs-slide-to="7"></li>
   </ol> -->
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="5000">
-      <img src="img/ocean_1.jpg" class="d-block w-100" alt="...">
+      <img src="./static/img/forest_1.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item" data-bs-interval="5000">
-      <img src="img/ocean_2.jpg" class="d-block w-100" alt="...">
+      <img src="./static/img/forest_2.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item" data-bs-interval="5000">
-      <img src="img/ocean_3.jpg" class="d-block w-100" alt="...">
+      <img src="./static/img/forest_3.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item" data-bs-interval="5000">
-      <img src="img/ocean_4.jpg" class="d-block w-100" alt="...">
+      <img src="./static/img/forest_4.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item" data-bs-interval="5000">
-      <img src="img/ocean_5.jpg" class="d-block w-100" alt="...">
+      <img src="./static/img/forest_5.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item" data-bs-interval="5000">
-      <img src="img/ocean_6.jpg" class="d-block w-100" alt="...">
+      <img src="./static/img/forest_6.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item" data-bs-interval="5000">
-      <img src="img/ocean_7.jpg" class="d-block w-100" alt="...">
+      <img src="./static/img/forest_7.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="./static/img/forest_8.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#slider" role="button" data-bs-slide="prev">
-    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
     <span class="sr-only"></span>
   </a>
   <a class="carousel-control-next" href="#slider" role="button" data-bs-slide="next">
-  <!--     <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
     <span class="sr_only"></span>
   </a>
 </div>
 <div class="mx-auto" style="width: 80%;">
-  <div>
-    <br>
-      <h2 style="text-align: center;">Общая информация</h2>
-    <br>
-  </div>
-  <table class="table">
-    <tbody>
-      <tr>
-        <td><i class="fa fa-home" aria-hidden="true"></i>  Адрес</td>
-        <td>Москва, Внуково, ул.2-я Рейсовая, д.12</td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-home" aria-hidden="true"></i>  Количество комнат</td>
-        <td>1</td>
-      </tr>
-      <tr>
+	<div>
+		<br>
+			<h2 style="text-align: center;">Общая информация</h2>
+		<br>
+	</div>
+	<table class="table">
+  	<tbody>
+	    <tr>
+	      <td><i class="fa fa-home" aria-hidden="true"></i>  Адрес</td>
+	      <td>Москва, Внуково, ул.2-я Рейсовая, д.12</td>
+	    </tr>
+	    <tr>
+	      <td><i class="fa fa-home" aria-hidden="true"></i>  Количество комнат</td>
+	      <td>1</td>
+	    </tr>
+	    <tr>
 
-        <td>
-          <i class="fa fa-bed" aria-hidden="true"></i>  Количество спальных мест</td>
-        <td>2 + 1</td>
-      </tr>
-      <tr>
-        <td>
-          <i class="fa fa-bed" aria-hidden="true"></i>  Количество кроватей</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>
-          <i class="fa fa-users" aria-hidden="true"></i>  Количество гостей</td>
-        <td>1 - 3</td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-home" aria-hidden="true"></i>  Площадь (кв. метров)</td>
-        <td>16</td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-home" aria-hidden="true"></i>  Этаж</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td><img src="img/walk.png" >
-        Пешком до аэропорта(мин)</td>
-        <td>10 - 15</td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-child" aria-hidden="true"></i>  
-        Можно с детьми?</td>
-        <td>Да</td>
-      </tr>
-      <tr>
-        <td><img src="img/smoking.png">  
-        Можно курить?</td>
-        <td>Только на улице</td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-paw" aria-hidden="true"></i>  
-        Можно с животными?</td>
-        <td>Да с доплатой</td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-rub" aria-hidden="true"></i>  
-        Стоимость</td>
-        <td>2390 в сутки</td>
-      </tr>
-    </tbody>
-  </table>
+	      <td>
+	      	<i class="fa fa-bed" aria-hidden="true"></i>  Количество спальных мест</td>
+	      <td>2 + 1 + 1</td>
+	    </tr>
+	    <tr>
+	      <td>
+	      	<i class="fa fa-bed" aria-hidden="true"></i>  Количество кроватей</td>
+	      <td>3</td>
+	    </tr>
+	    <tr>
+	      <td>
+	      	<i class="fa fa-users" aria-hidden="true"></i>  Количество гостей</td>
+	      <td>1 - 4</td>
+	    </tr>
+	    <tr>
+	      <td><i class="fa fa-home" aria-hidden="true"></i>  Площадь (кв. метров)</td>
+	      <td>18</td>
+	    </tr>
+	    <tr>
+	      <td><i class="fa fa-home" aria-hidden="true"></i>  Этаж</td>
+	      <td>1</td>
+	    </tr>
+	    <tr>
+	      <td><img src="./static/img/walk.png" >  
+	      Пешком до аэропорта(мин)</td>
+	      <td>10 - 15</td>
+	    </tr>
+	    <tr>
+	      <td><i class="fa fa-child" aria-hidden="true"></i>  
+	      Можно с детьми?</td>
+	      <td>Да</td>
+	    </tr>
+	    <tr>
+	      <td><img src="./static/img/smoking.png">  
+	      Можно курить?</td>
+	      <td>Только на улице</td>
+	    </tr>
+	    <tr>
+	      <td><i class="fa fa-paw" aria-hidden="true"></i>  
+	      Можно с животными?</td>
+	      <td>Да с доплатой</td>
+	    </tr>
+	    <tr>
+	      <td><i class="fa fa-rub" aria-hidden="true"></i>  
+	      Стоимость</td>
+	      <td>2490 в сутки</td>
+	    </tr>
+	  </tbody>
+	</table>
 </div>
 <div>
-  <h1 class="text-light fw-light" style="position: absolute; top: 40vh ; left: calc(50vw - 130.453px); font-size: 100px; font-family: Super_puper_light;">
-      Ocean
-  </h1>
+	<h1 class="text-light fw-light" style="position: absolute; top: 40vh ; left: calc(50vw - 122.6015px); font-size: 100px; font-family: Super_puper_light;">
+		Forest
+	</h1>
 </div>
 <div class="d-grid col-2 mx-auto py-1 my-2">
     <a href="https://wapp.click/789779691434" class="btn btn-outline-primary" role="button">Забронировать</a>
 </div>
 <div>
-  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
-    <i class="fa fa-arrow-up" aria-hidden="true"></i>
-  </a>
+	<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
+		<i class="fa fa-arrow-up" aria-hidden="true"></i>
+	</a>
 </div>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">COVID - 19</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         Мы заботимся о вас, носите маску в общественных местах. <br>
@@ -226,17 +232,17 @@
       ></a>
     </section>
     </div>
-  <div class="text-center text-light p-2" style="background-color: #143143;">
+  <div class="text-center text-light p-2" style="background-color: #7d5319;">
     © 2020 Copyright:
-    <a class="text-light" href="index.html">kashinmaksim03@mail.ru</a>
+    <a class="text-light" href="https://kashinmaksim03@mail.ru">kashinmaksim03@mail.ru</a>
   </div>
 </footer>
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  <script src="https://use.fontawesome.com/f35f4cb2a7.js"></script>
-  <script src="script.js" type="text/javascript"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>    
+    <script src="https://use.fontawesome.com/f35f4cb2a7.js"></script>
+    <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
